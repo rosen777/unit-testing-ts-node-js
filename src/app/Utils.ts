@@ -1,5 +1,6 @@
 import { UrlWithParsedQuery, parse } from "url";
 
+/* istanbul ignore next */
 export class Utils {
     public static parseUrl(url: string):UrlWithParsedQuery {
         if (!url) {

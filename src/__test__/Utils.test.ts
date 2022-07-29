@@ -9,7 +9,7 @@ describe('Utils test suite', () => {
         console.log('before all');
     })
 
-    test.only('first test', () => {
+    test('first test', () => {
         const result = Utils.toUpperCase('abc');
         expect(result).toBe('ABC');
     });
@@ -38,13 +38,13 @@ describe('Utils test suite', () => {
         }
         expect(expectError).toThrowError();
     })
-    test.only("test invalid URL with arrow function", () => {
+    test("test invalid URL with arrow function", () => {
         expect(() => {
             Utils.parseUrl("");
         }).toThrow("Empty url");
     });
 
-    test.only('test invalid URL with try catch', () => {
+    test('test invalid URL with try catch', () => {
         try {
             Utils.parseUrl('');
         } catch (error) {
